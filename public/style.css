@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Bungee+Tint&family=Tagesschrift&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: borderrder;
+}
+
+body {
+  background: purple;
+}
+
+#start-button {
+  background: transparent;
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  top: 300px;
+  left: 400px;
+  width: 500px;
+  height: 50px;
+  border: none;
+}
+
+
+#hide-first {
+  display: none;
+}
+
+#username {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  position: absolute;
+  top: 320px;
+  left: 525px;
+  color: black;
+  height: 10px;
+  letter-spacing: 1.5px;
+  background: white;
+  border-radius: 20px;
+  box-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
+}
+
+#hide-first>img {
+  position: absolute;
+  top: 180px;
+  left: 560px;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+#hide-first>img:hover {
+  opacity: 2%;
+}
+
+#views {
+  position: absolute;
+  top: 230px;
+  left: 600px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#led {
+  position: absolute;
+  top: 400px;
+  left: 610px;
+  height: 10px;
+  width: 50px;
+  background: red;
+  border-radius: 20px;
+  box-shadow:
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px red,
+    0 0 80px red;
+}
+
+#discord {
+  position: absolute;
+  top: 415px;
+  left: 610px;
+  z-index: 4;
+}
+
+
+
+#discord:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  animation: 2s ease rotating;
+}
+
+@keyframes rotating {
+  10% {
+    transform: rotate(20deg)
+  }
+
+  20% {
+    transform: rotate(-20deg);
+  }
+
+  70% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    cursor: pointer;
+  }
+
+}
